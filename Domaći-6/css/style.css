@@ -1,0 +1,190 @@
+/*
+- General
+-- Header
+--- Footer
+---- Portfolio
+----- O meni
+------ Kontakt
+------- Media Queris
+*/
+
+/* -  General  - */
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Dosis', sans-serif;
+    font-size: 20px;
+    line-height: 30px;
+    color: #034FE8;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+.clearfix{
+    clear: both;
+}
+h1{
+    font-size: 40px;
+    color: white;
+}
+h2{ 
+    color: white;
+    font-size: 32px;
+    padding: 1%;
+}
+.selected{
+    border-bottom: 2px solid #034FE8;
+}
+.container{
+    width: 98%;
+    max-width: 1300px;
+    min-width: 450px;
+    margin: 2% auto;
+}
+
+/* --  Header -- */
+
+header{
+    background-color: #034FE8;
+    text-align: center;
+    position: sticky;
+    width: 100%;
+
+}
+.heading{
+ padding: 5%;
+}
+li{
+    display: inline-block;
+}
+ul{ 
+    list-style: none;
+}
+nav{
+    background-color: #03FFDE;
+    padding: 1%;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #034FE8;
+}
+nav ul li:nth-child(2){
+    margin: 0 20px;
+}
+nav ul li:nth-child(3){
+    margin-right: 40px;
+}
+nav ul li a:hover{
+    color: rgb(255, 255, 255);
+}
+
+/* --- Footer --- */
+
+footer{
+    position: sticky;
+    vertical-align: bottom;
+    color: #034FE8;
+    font-weight: bold;
+    text-align: center;
+    background-color: #03FFDE;
+
+}
+
+
+
+
+/* ---- Portfolio ---- */
+
+.projekat p,
+.projekat h1{
+    padding-left: 3%;
+    color: #0A9CFF;
+}
+.projekat p{
+    padding-bottom: 5%;
+}
+
+.projekat{
+    width: 90%;
+    margin: 3% auto;
+    border: 3px solid rgb(109, 114, 115); 
+    border-radius: 5px;
+    overflow: hidden;
+
+}
+.projekat a{
+    text-decoration: none;
+    color: #034FE8;
+}
+.projekat a:hover{
+    opacity: 0.6;
+}
+.projekat a h1:hover{
+    opacity: 0.6;
+}
+
+
+/* ----- O meni ----- */
+
+#ja{
+    margin: 2% 41%;
+    width: 20%;
+    border-radius: 50%;
+}
+.main-container h1{
+    color: #0A9CFF;
+    text-indent: 3%;
+    
+}
+.main-container p{
+    text-align: justify;
+}
+.kontakt-detalji{
+    min-height: 345px;
+}
+.kontakt-detalji ul{
+    list-style: none;
+    padding-top: 3%;
+}
+.kontakt-detalji li{
+    display: block;
+}
+.kontakt-detalji i{
+    margin:1%;
+}
+.kontakt-detalji a{
+    text-decoration: none;
+}
+
+
+/* ------- Media Queris ------- */
+
+
+
+@media screen and ( max-width: 960px) {
+header{
+    text-align: initial;
+    border-bottom: 3px solid #03C7E8;
+}
+header h1, h2{
+    display:  inline-block;
+}  
+nav{
+    width: 100%;
+}
+.container{
+    width: 98%;
+    margin: 0 auto;
+}
+.projekat{
+    width: 33%;
+    display: inline-block;
+}
+.projekat h1{
+    font-size: 34px;
+    padding: 0;
+}
+}
+
